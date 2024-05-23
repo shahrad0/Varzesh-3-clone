@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Nazanin;
+    src: url(Font/B-NAZANIN.TTF);
+}
+table{
+    border-collapse: collapse;
+    margin-bottom: 5%;border-spacing:100px;
+}
+th,td{
+    padding: 5px 0;
+}
+img{
+    vertical-align: middle;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Nazanin;
+}
+a{
+    color: black;
+}
+.team-banner{
+    height: 25vh;
+    display: flex;
+    position: relative;
+}
+.generic-team-name{
+    margin: 5% 0;
+}
+.banner-background-img{
+    background-image: url(Team\ Images/im5kp11n.jpg);
+    width: 60%;
+    height : 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.team-theme{
+    z-index: 10;
+    position: absolute;
+    background:linear-gradient( to left, #064ae7 70%, #064ae796 100%) ;
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 1000PX;
+}
+.top-team-banner{
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-right: 6%;
+    width: 60%;
+    height: 60%;
+}
+.generic-team-logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+}
+.join-fan-club{
+    display: flex;
+    border: white 2px solid;
+    align-items: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 50%;
+    padding: 2%;
+    margin: auto 0;
+    margin-right: 5%;
+    font-size: 16px;
+}
+.team-break-line{
+    background-color: rgb(216, 216, 216);
+    border: .1px solid rgb(216, 216, 216);
+    border-radius: 100%;
+    margin:  0 5%;
+}
+.bottom-team-banner{
+    height: 42%;
+    display: flex;
+    margin-right:auto ;
+}
+.team-info-option{
+    color: white;
+    text-align: center;
+    width: 10%;
+    margin-TOP: auto;
+    margin-bottom: .4% ;
+}
+.selected-filter{
+    border-bottom: 3px white solid;
+}
+.team-games-headline{
+    margin: 3%;
+    text-align: right;
+}
+.team-game{
+    height: 100%;
+    width : 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.time-line{
+    display: flex;
+    height: 5%;
+    width: 100%;
+}
+.time-line::after{
+    content: " ";
+    background-color: #eee;
+    width: 45%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.time-line::before{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    content: " ";
+    width: 40%;
+    background-color: #eee;
+}
+.time-line-dot{
+    width: 4%;
+    margin: 0 8%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #eee;
+}       
+.team-game-container{
+    position: relative;
+    height: 25vh;
+    display: flex;
+}
+.team-game-info{
+    border-top: 3px solid #ddd;
+    border-radius: 4px;
+    width: 90%;
+    height: 75%;
+}
+.team-name{
+    font-size: 14px;
+    padding: 5%;
+    background-color: #fafafa;
+    text-align: right;
+}
+.date-icon{
+    width: 10%;
+}
+.time-and-league{
+    font-size: 12px;
+    text-align: right;
+    padding: 5%;
+    background-color: #f5f5f5;
+}
+.current-match-center{
+    background-color: #0a97b3;
+}
+.current-match::after{
+    background-image: linear-gradient(90deg, #0a97b3, #eee 100%);
+}
+.current-match::before{
+    background-image: linear-gradient(270deg, #0a97b3, #eee 100%);
+}
+.game-margin{
+    margin-left: 5%;
+}
+.right{
+    background-color: white;
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0%;
+    border: none;
+}
+.left{
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    width: 5%;
+    height: 100%;
+    border: none;
+}
+.button-img-resize{
+    width: 50%;
+}
+.main-content{
+    flex-wrap: wrap;
+    text-align: right;
+    display: flex;
+    margin: 3% 5%;
+}
+.team-stats{
+    width: 30%;
+}
+.team-news-and-backstory{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-intro{
+    width: 100%;
+    text-align: right;
+    display: flex;
+}
+.team-news{
+    display: flex;
+    width: 49%;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+.post-info{
+    flex-wrap: wrap;
+    width: 70%;
+    display: flex;
+    color: #607d8b;
+}
+.post-detail{
+    margin: 5%; 
+    font-size: 12px;
+}
+.post-thumbnail{
+    object-fit: cover;
+    border-radius: 15px;
+    height: 70%;
+    width: 100%;
+}
+.post-thumbnail-container{
+    width:50%;
+}
+.post-headline{
+    margin: 0 5%;
+    color: black;
+}
+.post-discirption{
+    margin: 0 5%;
+    color: black;
+}
+.league{
+    width: 100%;
+    font-size: 20px;
+    /* line-height: 250%; */
+}
+.team-score{
+    width: 20%;
+    text-align: center;
+}
+.game-played{
+    text-align: center;
+    width: 20%;
+}
+.team-rank{
+    width: 60%;
+}
+.gray-back{
+    background-color:     #f5f5f5;
+}
+.blue{
+    color: #607d8b;
+}
+.team-best-player{
+    margin-top: 10% ;
+    display: flex;
+}
+.text-adjust{
+    margin-top: 2%;
+}
+.player-goal-count{
+    /* padding: 5% 0; */
+    width: 15%;
+    text-align: right;
+}
+.player-name{
+    text-align: right;
+    width: 85%;
+}
+.video-container{
+    margin: 1.5% 0;
+    margin-left: 2.5%;
+    position: relative;
+    height: 15%;
+    width :30%;
+}
+.video-thumbnail{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.video-timstamps{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 75% ;
+    z-index: 10;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+}
+.video-discription{
+    width: 100%;
+}
+.date{
+    color: #999;
+}
+.view{
+    color: #999;
+}
+.video-play-button{
+    background-color: #0a97b3;
+    display: flex;
+    align-items : center;
+    width: 20px;
+}
